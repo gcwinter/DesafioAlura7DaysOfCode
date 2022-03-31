@@ -7,11 +7,11 @@ import java.net.http.HttpResponse;
 public class ListOfFilms {
     public static void main(String[] args) throws URISyntaxException {
 
-        final String senha = "k_cp505m6c";
+        final String password = "k_cp505m6c";
 
         HttpRequest httpRequest = HttpRequest
                 .newBuilder()
-                .uri(new URI("https://imdb-api.com/en/API/Top250Movies/"+ senha))
+                .uri(new URI("https://imdb-api.com/en/API/Top250Movies/"+ password))
                 .GET()
                 .build();
 
